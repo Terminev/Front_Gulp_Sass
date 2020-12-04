@@ -1,0 +1,3 @@
+#ignorer le fichier Node_module lors des push sur Git
+node_modules
+debug.log
