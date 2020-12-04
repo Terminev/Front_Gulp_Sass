@@ -1,0 +1,90 @@
+#Whoweare {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+
+    img {
+        margin-right: $Margin30;
+    }
+
+    article {
+        margin-top: 58px;
+        width: 40%;
+        background-image: image('../../assets/img/background-we-are.png');
+
+        h2 {
+            font-size: $Subtitle;
+            color: $purple;
+            font-family: $Poppins;
+            font-weight: $normal;
+        }
+
+        h3 {
+            color: $Tcolor;
+            font-size: $Tsize;
+            font-family: $Poppins;
+            font-weight: $bold;
+        }
+
+        p {
+            color: $Scolor;
+            font-size: $Ssize;
+            font-family: $Poppins;
+            font-weight: $normal;
+            margin-bottom: $Margin36;
+            width: $P80;
+            line-height: $SpaceText;
+        }
+    }
+}
+
+#background {
+    background-image: url('../../assets/img/background-we-are.png');
+}
+
+@media (max-width: 1024px) {
+    #Whoweare {
+        img {
+            width: $W70;
+            margin: auto;
+        }
+
+        #background {
+            p {
+                text-align: center;
+                width: auto;
+            }
+
+            a {
+                display: flex;
+                width: 170px;
+                margin: auto;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #Whoweare {
+        img {
+            width: $P80;
+            margin: auto;
+        }
+
+        #background {
+            width: $P80;
+
+            h2 {
+                text-align: center;
+            }
+
+            h3 {
+                font-size: $FS45;
+                text-align: center;
+            }
+
+        }
+    }
+}

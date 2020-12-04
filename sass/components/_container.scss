@@ -1,0 +1,109 @@
+section {
+    #title {
+        margin-left: $MargeL;
+        margin-top: 130px;
+
+        h2 {
+            color: $purple;
+            font-size: 25px;
+            font-family: $Lato;
+            font-weight: $normal;
+        }
+
+        h3 {
+            color: $Tcolor;
+            font-size: $Tsize;
+            font-family: $Poppins;
+            font-weight: $bold;
+        }
+    }
+
+    .align {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #bg {
+        background: url(../../assets/img/background-service.png);
+        background-size: 90% auto;
+        background-position: 50% $P100;
+        margin-bottom: 90px;
+    }
+
+    .container {
+        width: 367px;
+        height: 410px;
+        margin: 80px;
+        padding: $Pad20 $Pad20 $Pad30 $Pad30;
+        border-radius: $BR36;
+        box-shadow: $BXS;
+        background-color: $white;
+        position: relative;
+
+        img {
+            margin: auto;
+            display: flex;
+        }
+
+        h2 {
+            margin-top: $Margin38;
+            font-weight: $bold;
+            font-family: $Poppins;
+            font-size: $ContTitle;
+            color: $Tcolor;
+        }
+
+        p {
+            margin-top: $Margin38;
+            color: $Tcolor;
+            font-family: $Lato;
+            font-size: $ContText;
+            font-weight: $normal;
+        }
+
+        a {
+            position: absolute;
+            bottom: $Po15;
+            right: $Po15;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        .container {
+            margin: 60px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    section {
+        #title {
+            text-align: center;
+            margin-left: auto;
+
+            h2 {
+                font-size: $Subtitle;
+            }
+
+            h3 {
+                font-size: $FS45;
+            }
+        }
+
+        .container {
+            height: auto;
+            text-align: center;
+            padding-bottom: $Pad75;
+
+            a {
+                float: none;
+                width: 50%;
+                right: 25%;
+            }
+        }
+    }
+
+}

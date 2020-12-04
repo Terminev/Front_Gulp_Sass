@@ -1,0 +1,115 @@
+#Pricing {
+    background-color: $pink;
+
+    div {
+        h2 {
+            padding-top: 90px;
+            font-size: $Subtitle;
+            color: $purple;
+            font-family: $Poppins;
+            font-weight: $normal;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: $Poppins;
+            color: $Tcolor;
+            font-size: $Tsize;
+            font-weight: $bold;
+            text-align: center;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 97px;
+
+        .conteneur {
+            width: 370px;
+            height: 460px;
+            margin: 85px;
+            padding: 57px 40px;
+            box-shadow: $BXS;
+            border-radius: $BR26;
+            background-color: $white;
+            text-align: center;
+            position: relative;
+
+            h2 {
+                color: $Tcolor;
+                font-size: $TxtPrice;
+                font-family: $Poppins;
+                font-weight: $normal;
+            }
+
+            p {
+                color: $Scolor;
+                font-size: $Ssize;
+                font-family: $Poppins;
+                font-weight: $normal;
+                margin-top: $Margin70;
+                margin-bottom: $Margin36;
+            }
+
+            span {
+                color: $blue;
+                font-size: $Price;
+                font-weight: $bold;
+                font-family: $Poppins;
+            }
+
+            a {
+                position: absolute;
+                bottom: 53px;
+                right: 27%;
+                width: 46%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #Pricing {
+        section {
+            .conteneur {
+                margin: $Margin70;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #Pricing {
+        div {
+            h2 {
+                padding-top: $Pad75;
+            }
+
+            h3 {
+                font-size: $FS45;
+            }
+        }
+
+        section {
+            padding-bottom: $Nbr0;
+
+            .conteneur {
+                margin: $Margin75 auto;
+                width: $P80;
+
+                p {
+                    margin-top: $Margin30;
+                    margin-bottom: $Margin10;
+                }
+
+                a {
+                    width: $W70;
+                    bottom: 20px;
+                    right: 15%;
+                }
+            }
+        }
+    }
+}

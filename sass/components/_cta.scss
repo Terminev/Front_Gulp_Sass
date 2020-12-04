@@ -1,0 +1,42 @@
+.TallCTA {
+    background: $degradeCTA;
+    border-radius: $BR26;
+    font-family: $Poppins;
+    font-size: $Ssize;
+    color: $white;
+    padding: $PadTCTA;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.SmallCTA {
+    color: $white;
+    border-radius: $BR36;
+    font-family: $Poppins;
+    font-size: $CTAsmall;
+    background: $degradeCTA;
+    text-decoration: none;
+    padding: $PadSCTA;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.WhiteCTA {
+    padding: $PadTCTA;
+    border-radius: $BR36;
+    border: solid 1px $blue;
+    text-decoration: none;
+    font-family: $Poppins;
+    font-size: $Ssize;
+    color: $Tcolor;
+    font-weight: $bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
